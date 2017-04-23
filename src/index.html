@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+</head>
+<body>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="game-window hidden">
+                    <h1 class="game-title"></h1>
+                    <div class="col-md-6">
+                        <img class="game-poster img-responsive" src="" alt="game poster">
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="game-data">
+                            <li class='game-date'></li>
+                            <li class='game-platforms'></li>
+                            <li class='game-description'></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 chat-window">
+                <div class="col-md-12 chat-header">
+                    <h2>My gaming chat group</h2>
+                </div>
+                <div class="col-md-12 chat">
+                    <div class="progress hidden">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:0">
+                        <span class="sr-only">70% Complete</span>
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <input class="form-control game-input" placeholder="What game would you like to ask your friends about?">
+                </div>
+                <div class="col-md-1">
+                    <a class="glyphicon glyphicon-triangle-right game-btn" aria-hidden="true"></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="rating">
+        <div id="positive">
+        </div>
+        <div id="negative">
+        </div>
+    </div>
+
+
+    <table class="table" id="results">
+        <tr>
+            <th>Word</th>
+            <th>Count</th>
+
+        </tr>
+
+    </table>
+    <ul id="keywords"></ul>
+</div>
+
+<script src="/assets/app.bundle.js"></script>
+</body>
+</html>
